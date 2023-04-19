@@ -23,7 +23,7 @@ const timer = Timer({
   minutesDisplay,
   secondsDisplay,
   timerTimeOut,
-  resetControls
+  resetControls: controls.reset
 })
 
 buttonPlay.addEventListener('click', function () {
@@ -38,7 +38,7 @@ buttonPause.addEventListener('click', function () {
 
 buttonStop.addEventListener('click', function () {
   controls.reset()
-  timer.resetTimer()
+  timer.reset()
 })
 
 buttonSoundOff.addEventListener('click', function () {
