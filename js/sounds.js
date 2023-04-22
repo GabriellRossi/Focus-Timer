@@ -11,9 +11,19 @@ export default function () {
     'https://github.com/maykbrito/automatic-video-creator/blob/master/audios/bg-audio.mp3?raw=true'
   )
 
+  bgAudio.loop
+
+  function pressButton() {
+    buttonPressAudio.play()
+  }
+
+  function timeEnd() {
+    kitchenTimer.play()
+  }
+
   return {
-    buttonPressAudio,
-    kitchenTimer,
+    pressButton,
+    timeEnd,
     bgAudio
   }
 }
